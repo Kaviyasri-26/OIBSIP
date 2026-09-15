@@ -2,13 +2,13 @@
 
 This repository contains my tasks completed as part of the **OASIS Infobyte SIP – Security Analyst / Cyber Security Internship**.
 
-## 👩‍💻 Intern Details
+## Intern Details
 
 - **Name:** Kaviyasri C.
-- **Track:** Cyber Security
+- **Track:** Security Analyst
 - **Internship:** OASIS Infobyte SIP
 
-## 📂 Completed Tasks
+## Completed Tasks
 
 ### 🔐 Task 4 – Common Network Security Threats
 A research report covering common network security threats such as:
