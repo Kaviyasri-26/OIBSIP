@@ -1,0 +1,90 @@
+NMAP SCAN RESULT:
+=================
+Target IP: 10.0.2.15
+Operating System: Kali Linux VM
+Tool: Nmap 7.99
+Environment: Oracle VirtualBox
+Scan Date: 13 September 2026
+
+1. BASIC SCAN
+-------------
+Command:
+nmap 10.0.2.15
+
+Result:
+Host is up.
+
+All 1000 scanned TCP ports were in ignored states.
+
+Not shown:
+1000 filtered TCP ports (no-response)
+
+Finding:
+No open TCP ports were identified by the basic scan.
+
+
+2. SERVICE VERSION SCAN
+-----------------------
+Command:
+nmap -sV 10.0.2.15
+
+Result:
+Host is up.
+
+All 1000 scanned TCP ports were in ignored states.
+
+Not shown:
+1000 filtered TCP ports (no-response)
+
+Service detection was performed, but no open services were identified.
+
+Finding:
+No running TCP services were detected because the scanned ports were filtered.
+
+
+3. OS DETECTION SCAN
+--------------------
+Command:
+sudo nmap -O 10.0.2.15
+
+Result:
+Host is up.
+
+All 1000 scanned TCP ports were in ignored states.
+
+Not shown:
+1000 filtered TCP ports (no-response)
+
+Nmap reported:
+"Too many fingerprints match this host to give specific OS details."
+
+Network Distance:
+0 hops
+
+Finding:
+Nmap could not identify the specific operating system because there were not enough suitable responses from the target's ports.
+
+
+4. OPEN PORT ANALYSIS
+---------------------
+Open ports identified:
+None.
+
+Services identified:
+None.
+Since no open TCP ports were identified in these scans, there were no exposed TCP services to analyze.
+
+
+5. SECURITY ANALYSIS
+--------------------
+The scan showed that the 1000 default TCP ports tested by Nmap were filtered and did not respond.
+Filtered ports can indicate that a firewall or packet-filtering mechanism is preventing Nmap from receiving a response.
+This reduces the externally visible attack surface for the scanned TCP ports. However, a filtered port does not automatically mean that the system is completely secure.
+
+
+6. CONCLUSION
+-------------
+The target host 10.0.2.15 was reachable, but all 1000 TCP ports tested were filtered.
+The service version scan did not identify any open TCP services.
+The OS detection scan could not determine a specific operating system because too many OS fingerprints matched the available information.
+These results demonstrate how Nmap can be used to identify exposed network services and provide an initial view of a system's network attack surface.
